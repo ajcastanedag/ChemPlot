@@ -7,3 +7,5 @@ This R application is designed to streamline the analysis of geochemical data fo
 - Load geochemical data from Excel files.
 - Filter information based on geological formations.
 - Generate correlation plots for insightful data analysis.
+
+![plot_2023-11-11(2)](https://github.com/ajcastanedag/ChemPlot/assets/8007777/3eb671b0-6ac5-491e-a4ba-4e15773ddf00)
