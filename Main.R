@@ -17,6 +17,7 @@ ui <- fluidPage(
   # Sidebar layout
   sidebarLayout(
     sidebarPanel(
+      width = 2,  # Set the width to 2 (20%)
       fileInput("file", "Choose an Excel file"),
       selectInput("x_axis", "X Axis", ""),
       selectInput("y_axis", "Y Axis", ""),
@@ -26,12 +27,13 @@ ui <- fluidPage(
     ),
     
     mainPanel(
-      plotOutput("main_plot", height = "800px", width = "800px")  # Adjust height and width as needed
+      width = 10,  # Set the width to 10 (80%)
+      plotOutput("main_plot", width = "100%")  # Set the width of the plotOutput to 100%
     )
   )
 )
 
-# Define server
+#####################################################  Define server
 server <- function(input, output, session) {
   
   # Reactive values
@@ -86,6 +88,7 @@ server <- function(input, output, session) {
 
 }
 
-# Run the application
+##################################################### Run the application
 shinyApp(ui, server)
+
 
